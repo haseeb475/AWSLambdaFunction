@@ -26,7 +26,7 @@ Key features:
 1. Clone the repository:
    ```bash
    git clone https://github.com/haseeb475/AWSLambdaFunction.git
-   cd plutus21
+   cd AWSLambdaFunction
    ```
 
 2. Install dependencies:
