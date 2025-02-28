@@ -158,7 +158,3 @@ Error response:
   "error": "Error message details"
 }
 ```
-
-## License
-
-MIT
