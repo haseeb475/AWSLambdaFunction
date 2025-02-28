@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  GetTasksFunction:
+
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./
+      Handler: dist/lambdaFunction.handler
+      Runtime: nodejs18.x
+      Timeout: 90
+      Environment:
+        Variables:
+          TASKS_TABLE_NAME: TasksTable
+          NODE_ENV: development
