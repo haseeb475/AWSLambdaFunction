@@ -69,12 +69,9 @@ sam local invoke GetTasksFunction -e events/event.json
 
 ## Testing
 
-The code includes test data that's automatically used when `NODE_ENV` is set to `test`. This allows for easy testing without a database connection.
+The code includes test data that's automatically used when `NODE_ENV` is set to `test`. This allows for easy testing without a database connection. This can be done in template.yml file.
 
 ```bash
-# Set environment to test
-export NODE_ENV=test
-
 # Compile and run
 npx tsc
 sam local invoke GetTasksFunction -e events/event.json
